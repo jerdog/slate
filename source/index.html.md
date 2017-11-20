@@ -2,10 +2,10 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - objc
+  - swift
+  - gradle
+  - java
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -45,7 +45,7 @@ We have provided multiple ways to implement the PacketZoom SDK into iOS Native a
 `pod 'PZSpeed', :git => 'https://gitlab.packetzoom.net/packetzoom/PZSpeedIOSSDK.git'`   
 2. Install or Update pods by running `pod install` or `pod update` command.
 
-Move on to **Step 6** in the Final Steps below.
+Move on to the Final Steps below.
 
 ***Use Downloaded PZSpeed Framework***   
 1. Download the iOS SDK.   
@@ -62,8 +62,10 @@ libc++.tbd
 4. In **Build Settings > Other Linker Flags** make sure that the flag `-ObjC` is present.   
 5. In **Build Settings > Build Options** set __Enable BitCode__ to `NO`.   
 
-***Final Steps***
-6. Perform the settings changes to the right:
+***Final Steps***   
+Perform the settings changes to the right:
+
+**For Objective-C**:   
 > In your AppDelegate.m file, add:
 
 ```objc
@@ -75,6 +77,24 @@ libc++.tbd
 ```objc
 [PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
 ```
+
+> Replace <APP_ID> and <API_KEY> with your corresponding bits.
+
+**For Swift**   
+> Create a bridging header file if your project does not already have one. Add the following to it:
+
+```swift
+#import <PZSpeed/PZSpeed.h>
+```
+
+> Initialize using the following code:
+
+```swift
+var pzsc: PZSpeedController = PZSpeedController(appID: "<APP_ID>", apiKey: "<API_KEY>")
+```
+
+Please contact us if you're using an XCode version prior to 7.0.
+
 
 ## Android Integration
 
