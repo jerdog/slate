@@ -19,11 +19,14 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+PacketZoom has been designed and engineered to be simple and straightforward. You can integrate the SDK into your app in minutes. No other changes to your app, to your infrastructure configuration are needed and there's no additional hardware to install or software to implement.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+You always have full control over PZ Mobile Expresslane in your app through our dashboard where you'll be able to:
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+- Turn PacketZoom on or off without having to rebuild or redeploy your app
+- Conduct A/B tests to see performance with and without PacketZoom
+- Control what content goes through PacketZoom acceleration
+- You'll have unprecedented operational monitoring and control to manage your app performance
 
 # Authentication
 
@@ -236,4 +239,3 @@ This endpoint deletes a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to delete
-
