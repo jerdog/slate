@@ -48,8 +48,8 @@ We have provided multiple ways to implement the PacketZoom SDK into iOS Native a
 Move on to **Step 6** in the Final Steps below.
 
 ***Use Downloaded PZSpeed Framework***   
-1. Download the iOS SDK.
-2. Add **PZSpeed Framework** to the __XCode Frameworks Folder__. If prompted, make sure to copy the necessary items. If you need a BitCode enabled version of the framework, please [contact us](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@packetzoom.com)
+1. Download the iOS SDK.   
+2. Add **PZSpeed Framework** to the __XCode Frameworks Folder__. If prompted, make sure to copy the necessary items. If you need a BitCode enabled version of the framework, please [contact us](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@packetzoom.com).   
 3. Make sure that the following frameworks and libraries are part of your project:   
 ```
 CoreLocation.framework
@@ -58,9 +58,9 @@ CoreTelephony.framework
 Foundation.framework
 libz.tbd
 libc++.tbd
-```
-4. In **Build Settings > Other Linker Flags** make sure that the flag `-ObjC` is present.
-5. In **Build Settings > Build Options** set __Enable BitCode__ to `NO`.
+```   
+4. In **Build Settings > Other Linker Flags** make sure that the flag `-ObjC` is present.   
+5. In **Build Settings > Build Options** set __Enable BitCode__ to `NO`.   
 
 ***Final Steps***
 6. Perform the settings changes to the right:
