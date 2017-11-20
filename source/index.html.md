@@ -35,6 +35,46 @@ You always have full control over PZ Mobile Expresslane in your app through our 
 
 The process begins with you downloading our SDK and including it into your application(s). The downloads can be accessed once you signup for a FREE Dashboard account [here](https://dashboard.packetzoom.com/). The download for your respective mobile platform will be presented as part of the signup process.
 
+## iOS Integration
+### iOS Native
+We have provided multiple ways to implement the PacketZoom SDK into iOS Native applications, either through **CocoaPods** or directly.
+
+#### Initialization
+***CocoaPods***
+1. Add the following to your Podfile:   
+`pod 'PZSpeed', :git => 'https://gitlab.packetzoom.net/packetzoom/PZSpeedIOSSDK.git'`
+2. Install or Update pods by running `pod install` or `pod update` command.
+
+Move on to **Step 6** in the Final Steps below.
+
+***Use Downloaded PZSpeed Framework***
+1. Download the iOS SDK.
+2. Add **PZSpeed Framework** to the __XCode Frameworks Folder__. If prompted, make sure to copy the necessary items. If you need a BitCode enabled version of the framework, please [contact us](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@packetzoom.com)
+3. Make sure that the following frameworks and libraries are part of your project:   
+```
+CoreLocation.framework
+SystemConfiguration.framework
+CoreTelephony.framework
+Foundation.framework
+libz.tbd
+libc++.tbd
+```
+4. In **Build Settings > Other Linker Flags** make sure that the flag `-ObjC` is present.
+5. In **Build Settings > Build Options** set __Enable BitCode__ to `NO`.
+
+***Final Steps***
+6. Perform the settings changes to the right:
+```objc
+# In your AppDelegate.m file, add:
+#import <PZSpeed/PZSpeed.h>
+
+# in your didFinishLaunchingWithOptions method, add:
+[PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
+```
+
+## Android Integration
+
+
 
 
 
