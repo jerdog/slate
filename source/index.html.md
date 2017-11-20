@@ -66,11 +66,9 @@ libc++.tbd
 Perform the settings changes to the right:
 
 **For Objective-C**
-> In your AppDelegate.m file, add:
+In your AppDelegate.m file, add:
 
-```objective_c
-#import <PZSpeed/PZSpeed.h>
-```
+`#import <PZSpeed/PZSpeed.h>`
 
 > In your didFinishLaunchingWithOptions method, add:
 
@@ -78,20 +76,24 @@ Perform the settings changes to the right:
 [PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
 ```
 
-> Replace <APP_ID> and <API_KEY> with your corresponding bits.
+<aside class="notice">
+You must replace <code>APP_ID</code> and <code>API_KEY</code> with your personal API ID and KEY.
+</aside>
 
 **For Swift**   
 Create a bridging header file if your project does not already have one. Add the following to it:
 
-```
-#import <PZSpeed/PZSpeed.h>
-```
+`#import <PZSpeed/PZSpeed.h>`
 
 > Initialize using the following code:
 
 ```swift
 var pzsc: PZSpeedController = PZSpeedController(appID: "<APP_ID>", apiKey: "<API_KEY>")
 ```
+
+<aside class="notice">
+You must replace <code>APP_ID</code> and <code>API_KEY</code> with your personal API ID and KEY.
+</aside>
 
 Please contact us if you're using an XCode version prior to 7.0.
 
