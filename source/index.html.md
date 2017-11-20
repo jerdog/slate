@@ -40,14 +40,14 @@ The process begins with you downloading our SDK and including it into your appli
 We have provided multiple ways to implement the PacketZoom SDK into iOS Native applications, either through **CocoaPods** or directly.
 
 #### Initialization
-***CocoaPods***
+***CocoaPods***   
 1. Add the following to your Podfile:   
-`pod 'PZSpeed', :git => 'https://gitlab.packetzoom.net/packetzoom/PZSpeedIOSSDK.git'`
+`pod 'PZSpeed', :git => 'https://gitlab.packetzoom.net/packetzoom/PZSpeedIOSSDK.git'`   
 2. Install or Update pods by running `pod install` or `pod update` command.
 
 Move on to **Step 6** in the Final Steps below.
 
-***Use Downloaded PZSpeed Framework***
+***Use Downloaded PZSpeed Framework***   
 1. Download the iOS SDK.
 2. Add **PZSpeed Framework** to the __XCode Frameworks Folder__. If prompted, make sure to copy the necessary items. If you need a BitCode enabled version of the framework, please [contact us](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@packetzoom.com)
 3. Make sure that the following frameworks and libraries are part of your project:   
