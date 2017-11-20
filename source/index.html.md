@@ -28,6 +28,8 @@ You always have full control over PZ Mobile Expresslane in your app through our 
 - Control what content goes through PacketZoom acceleration
 - You'll have unprecedented operational monitoring and control to manage your app performance
 
+![process](images/process.png)
+
 # Authentication
 
 > To authorize, use this code:
