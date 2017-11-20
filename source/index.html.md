@@ -65,7 +65,7 @@ libc++.tbd
 ***Final Steps***   
 Perform the settings changes to the right:
 
-**For Objective-C**:   
+**For Objective-C**
 > In your AppDelegate.m file, add:
 
 ```objective_c
@@ -81,9 +81,9 @@ Perform the settings changes to the right:
 > Replace <APP_ID> and <API_KEY> with your corresponding bits.
 
 **For Swift**   
-> Create a bridging header file if your project does not already have one. Add the following to it:
+Create a bridging header file if your project does not already have one. Add the following to it:
 
-```swift
+```
 #import <PZSpeed/PZSpeed.h>
 ```
 
