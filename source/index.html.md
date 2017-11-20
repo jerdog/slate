@@ -64,11 +64,13 @@ libc++.tbd
 
 ***Final Steps***
 6. Perform the settings changes to the right:
+> In your AppDelegate.m file, add:
 ```objc
-# In your AppDelegate.m file, add:
 #import <PZSpeed/PZSpeed.h>
+```
 
-# in your didFinishLaunchingWithOptions method, add:
+> In your didFinishLaunchingWithOptions method, add:
+```objc
 [PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
 ```
 
