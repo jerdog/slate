@@ -68,13 +68,13 @@ Perform the settings changes to the right:
 **For Objective-C**:   
 > In your AppDelegate.m file, add:
 
-```objc
+```objective_c
 #import <PZSpeed/PZSpeed.h>
 ```
 
 > In your didFinishLaunchingWithOptions method, add:
 
-```objc
+```objective_c
 [PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
 ```
 
