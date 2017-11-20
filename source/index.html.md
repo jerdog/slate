@@ -23,12 +23,20 @@ PacketZoom has been designed and engineered to be simple and straightforward. Yo
 
 You always have full control over PZ Mobile Expresslane in your app through our dashboard where you'll be able to:
 
-- Turn PacketZoom on or off without having to rebuild or redeploy your app
-- Conduct A/B tests to see performance with and without PacketZoom
+- Turn PacketZoom on/off without having to rebuild/redeploy your app
+- Conduct A/B tests to see performance with/without PacketZoom
 - Control what content goes through PacketZoom acceleration
 - You'll have unprecedented operational monitoring and control to manage your app performance
 
 ![process](images/process.png)
+
+# Getting Started
+## Download SDK
+
+The process begins with you downloading our SDK and including it into your application(s). The downloads can be accessed once you signup for a FREE Dashboard account [here](https://dashboard.packetzoom.com/). The download for your respective mobile platform will be presented as part of the signup process.
+
+
+
 
 # Authentication
 
