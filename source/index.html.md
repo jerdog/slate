@@ -63,18 +63,18 @@ libc++.tbd
 5. In **Build Settings > Build Options** set __Enable BitCode__ to `NO`.   
 
 ***Final Steps***   
+> In your didFinishLaunchingWithOptions method, add:
+
+```objective_c
+[PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
+```
+
 Perform the settings changes to the right:
 
 **For Objective-C**
 In your AppDelegate.m file, add:
 
 `#import <PZSpeed/PZSpeed.h>`
-
-> In your didFinishLaunchingWithOptions method, add:
-
-```objective_c
-[PZSpeedController controllerWithAppID: @"<APP_ID>" apiKey: @"<API_KEY>"];
-```
 
 <aside class="notice">
 You must replace <code>APP_ID</code> and <code>API_KEY</code> with your personal API ID and KEY.
